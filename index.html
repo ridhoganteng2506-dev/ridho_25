@@ -1,0 +1,132 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTR Digital | Karier Masa Depan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2>PTR<span>Digital</span></h2>
+        <div>
+            <a href="#beranda">Beranda</a>
+            <a href="#lowongan">Lowongan</a>
+            <a href="#tentang">Tentang</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero" id="beranda">
+    <p class="label">SELAMAT DATANG DI PTR DIGITAL</p>
+    <h1>Temukan Karier<br>Impianmu Bersama Kami</h1>
+    <p>Mulai perjalanan profesionalmu dan kembangkan kemampuanmu bersama tim kami.</p>
+    <a href="#lowongan" class="btn">Lihat Lowongan</a>
+</section>
+
+<section class="jobs" id="lowongan">
+    <h2>Lowongan Pekerjaan</h2>
+    <p class="subtitle">Temukan posisi yang sesuai dengan kemampuanmu.</p>
+
+    <div class="job-container">
+
+        <div class="job-card">
+            <span class="category">Teknologi</span>
+            <h3>Junior Web Developer</h3>
+            <p>Membuat dan mengembangkan website menggunakan teknologi web.</p>
+            <p class="location">📍 Jakarta | 💼 Full-time</p>
+            <button onclick="applyJob('Junior Web Developer')">
+                Lamar Sekarang
+            </button>
+        </div>
+
+        <div class="job-card">
+            <span class="category">Desain</span>
+            <h3>UI/UX Designer</h3>
+            <p>Merancang tampilan dan pengalaman pengguna yang menarik.</p>
+            <p class="location">📍 Jakarta | 💼 Full-time</p>
+            <button onclick="applyJob('UI/UX Designer')">
+                Lamar Sekarang
+            </button>
+        </div>
+
+        <div class="job-card">
+            <span class="category">Marketing</span>
+            <h3>Digital Marketing Intern</h3>
+            <p>Membantu promosi digital dan pengelolaan media sosial.</p>
+            <p class="location">📍 Jakarta | 💼 Magang</p>
+            <button onclick="applyJob('Digital Marketing Intern')">
+                Lamar Sekarang
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="tentang">
+    <h2>Tentang PTR Digital</h2>
+    <p>
+        PTR Digital adalah perusahaan simulasi di bidang teknologi digital
+        yang berfokus pada inovasi, kreativitas, dan pengembangan talenta.
+    </p>
+</section>
+
+<section class="application" id="lamaran">
+    <h2>Formulir Lamaran</h2>
+    <p>Silakan isi data diri untuk melamar pekerjaan.</p>
+
+    <form id="applicationForm">
+
+        <label>Nama Lengkap</label>
+        <input type="text" id="name" required
+        placeholder="Masukkan nama lengkap">
+
+        <label>Email</label>
+        <input type="email" id="email" required
+        placeholder="Masukkan email">
+
+        <label>Nomor HP / WhatsApp</label>
+        <input type="tel" id="phone" required
+        placeholder="Contoh: 081234567890">
+
+        <label>Pendidikan Terakhir</label>
+        <select id="education" required>
+            <option value="">-- Pilih Pendidikan --</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+            <option value="SMK">SMK</option>
+            <option value="D3">D3</option>
+            <option value="S1">S1</option>
+            <option value="S2">S2</option>
+        </select>
+
+        <label>Posisi yang Dilamar</label>
+        <select id="position" required>
+            <option value="">-- Pilih Posisi --</option>
+            <option value="Junior Web Developer">Junior Web Developer</option>
+            <option value="UI/UX Designer">UI/UX Designer</option>
+            <option value="Digital Marketing Intern">Digital Marketing Intern</option>
+        </select>
+
+        <label>Pesan Lamaran</label>
+        <textarea id="message" rows="4" required
+        placeholder="Tuliskan pesan lamaranmu"></textarea>
+
+        <button type="submit">Kirim Lamaran</button>
+
+    </form>
+
+    <p id="result"></p>
+</section>
+
+<footer>
+    <p>© 2026 PTR Digital. Website simulasi untuk pembelajaran.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
